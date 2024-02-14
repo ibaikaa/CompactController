@@ -11,12 +11,10 @@ final class PresentationController: UIPresentationController {
     
     let buttonFrame: CGRect
     
-    var height: CGFloat = 280
-    
     override var shouldPresentInFullscreen: Bool { false }
     
     override var frameOfPresentedViewInContainerView: CGRect {
-        CGRect(x: buttonFrame.midX - 150, y: buttonFrame.maxY + 20, width: 300, height: height)
+        CGRect(x: buttonFrame.midX - 150, y: buttonFrame.maxY + 20, width: 300, height: 280)
     }
     
     override func preferredContentSizeDidChange(forChildContentContainer container: UIContentContainer) {
